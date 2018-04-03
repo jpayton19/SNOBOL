@@ -1,0 +1,36 @@
+*********************************************************************************************************
+* Program Name: Lab4                                                                                    *
+* Student Names: Duncan Scott Martinson & John Payton                                                   *
+* Semester: Spring 2017                                                                                 *
+* Class: COSC 30403                                                                                     *
+* Instructor: Dr. James Comer                                                                           *
+* Due Date: 2/28/2017                                                                                   *
+*                                                                                                       *
+* Program Overview:                                                                                     *
+*   This SNOBOL program uses a text file to input data into a linked list of                            *
+*   Employees and execute commands in order to manipulate the list. After every                         *
+*   command, the program writes information about the execution to a separate text file.                *
+*   After all the data from the file has been read, the program terminates.                             *
+*                                                                                                       *
+* Input:                                                                                                *
+*   The program requires formatted data in a text file entitled "Lab4Data.txt"                          *
+*                                                                                                       *
+* Output:                                                                                               *
+*   The program outputs a data file entitled "Lab4Ans.txt" containing information                       *
+*   about the program's execution.                                                                      *
+*                                                                                                       *
+* Program Limitations:                                                                                  *
+*   1) The program does not allow for real time user interaction, and the output file                   *
+*   is overwritten after every execution.                                                               *
+*                                                                                                       *
+*                                                                                                       *
+* Significant Program Variables:                                                                        *
+*   input - the identifier for the input file                                                           *
+*   output - the identifier for the output file                                                         *
+*   cmd - a string that stores the first three characters read from a line of input. This is used to    *
+*       determine the appropriate subroutine to execute.                                                *
+*   head- an Employee node that serves as the list head. Used to reference the linked list.             *
+*   current- an Employee Node pointer used in almost every procedure. Is used to traverse the list and  *
+*           analyze data, manipulating it if need be.                                                   *
+*********************************************************************************************************
+
